@@ -1,0 +1,69 @@
+#define trigPin 13
+#define echoPin 12
+#define InfraPin 7
+#define M1Inp 8
+#define M2Inp 9
+#define M3Inp 10
+void setup()
+{
+pinMode(trigPin,OUTPUT);
+pinMode(echoPin,INPUT);
+pinMode(InfraPin,INPUT);
+pinMode(M1Inp,OUTPUT);
+pinMode(M2Inp,OUTPUT);
+pinMode(M3Inp,OUTPUT);
+}
+void loop()
+{
+int flag=0;
+int front;
+long duration,distance;
+digitalWrite(trigPin,LOW);
+delayMicroseconds(2);
+digitalWrite(trigPin,HIGH);
+delayMicroseconds(10);
+digitalWrite(trigPin,LOW);
+duration=pulseIn(echoPin,HIGH);
+distance=(duration/2)/29.1;
+digitalWrite(M1Inp,HIGH);
+digitalWrite(M2Inp,HIGH);
+digitalWrite(M3Inp,HIGH);
+if(distance==4)
+{
+digitalWrite(M1Inp,LOW);
+delay(8000);
+flag=1;
+}
+if(flag==1)
+{
+Front=digitalWrite(InfraPin);
+if(front==HIGH)
+{
+digitalWrite(M2Inp,LOW);
+
+UA Vaayu
+
+29
+
+Engineering Exploration - 15ECRP101
+digitalWrite(M3Inp,LOW);
+delay(1000);
+digitalWrite(M2Inp,HIGH);
+digitalWrite(M3Inp,LOW);
+delay(1000);
+digitalWrite(M2Inp,LOW);
+digitalWrite(M3Inp,HIGH);
+delay(1000);
+digitalWrite(M2Inp,HIGH);
+digitalWrite(M3Inp,HIGH);
+delay(1000);
+}
+}
+else
+{
+digitalWrite(M2Inp,LOW);
+digitalWrite(M3Inp,LOW);
+delay(8000);
+digitalWrite(M2Inp,HIGH);
+digitalWrite(M3Inp,HIGH);
+}
