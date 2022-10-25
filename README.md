@@ -19,5 +19,4 @@ Circuit Diagram:
 
 Device:
 
-<img width="417" alt="image" src="https://user-images.githubusercontent.com/35320633/197731903-15219aa8-6dfd-4245-b563-d6b436c96bdc.png">
-
+<img width="278" alt="image" src="https://user-images.githubusercontent.com/35320633/197732438-c8ffd3e2-a3e1-47ba-b2d6-1f165a8283e5.png">
