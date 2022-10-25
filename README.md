@@ -14,6 +14,9 @@ retracts the parachute within ten seconds. Also, we could overcome wear and tear
 parachute, hence achieving the objective of reusability. In future, we can improvise the device
 by deploying cased parachute and use more advanced mechanisms to retract the parachute.
 
+<img width="166" alt="image" src="https://user-images.githubusercontent.com/35320633/197734181-ae8fd17c-d775-46be-aa3d-695454defb48.png">
+
+
 ## AUTOCAD Diagram:
 
 <img width="461" alt="image" src="https://user-images.githubusercontent.com/35320633/197731260-55ee8ca4-6de7-4280-b9c8-f78a9072420b.png">
